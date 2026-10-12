@@ -1,0 +1,26 @@
+{
+  "foundation": {
+    "url": "https://github.com/max2605/stratagem_trainer/issues/1",
+    "number": 1
+  },
+  "core": {
+    "url": "https://github.com/max2605/stratagem_trainer/issues/2",
+    "number": 2
+  },
+  "catalog": {
+    "url": "https://github.com/max2605/stratagem_trainer/issues/3",
+    "number": 3
+  },
+  "ui": {
+    "url": "https://github.com/max2605/stratagem_trainer/issues/4",
+    "number": 4
+  },
+  "packages": {
+    "url": "https://github.com/max2605/stratagem_trainer/issues/5",
+    "number": 5
+  },
+  "verification": {
+    "url": "https://github.com/max2605/stratagem_trainer/issues/6",
+    "number": 6
+  }
+}

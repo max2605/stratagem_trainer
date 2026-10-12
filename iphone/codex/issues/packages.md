@@ -1,0 +1,1 @@
+Windows EXE, Linux AppImage/tar.gz, macOS DMG/ZIP, Android APK, iOS-Simulator und unsignierte IPA tatsächlich bauen. Apple-Signierung separat unterstützen; iPhone-Nutzung zusätzlich als installierbare Offline-PWA ermöglichen. Plattformstruktur, CI, Prüfsummen und Release-Artefakte bereitstellen.

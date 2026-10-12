@@ -1,0 +1,1 @@
+Kern-/Integrationstests und Browser-Bedienprüfung ausführen, Build-Ergebnisse überprüfen, Anleitung und JSON-Format dokumentieren, Releases und Prüfsummen veröffentlichen. Einschränkungen bei nativer iPhone-Installation transparent festhalten.

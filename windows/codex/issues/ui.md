@@ -1,0 +1,1 @@
+Responsive Trainingsoberfläche, mobile Hälfte als Eingabefeld, konfigurierbare Tasten und Beschriftung, Gruppen, Favoriten, Fehlertraining, Statistik, Editor, URL-Download, JSON-Import/Export, Sicherungen und Offline-Speicherung implementieren.

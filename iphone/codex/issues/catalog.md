@@ -1,0 +1,1 @@
+Für jeden veröffentlichten Warbond eine JSON-Datei, außerdem Grundspiel und Missionsbefehle hinzufügen. Quellen dokumentieren, leere Warbonds ausdrücklich kennzeichnen und deutsche/englische Sprachdateien vollständig halten.

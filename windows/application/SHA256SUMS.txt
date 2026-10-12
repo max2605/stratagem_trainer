@@ -1,0 +1,2 @@
+c83423f4374c8276fa875d8a26d314efaf973675c2520dad74724974c0f3237f  Stratagem-Trainer-1.0.0-windows-x64-portable.exe
+3f9b856dbd0e0d0b8ec3d8ff561718629303d07252ecddb10b3e958699bb8bd8  Stratagem-Trainer-1.0.0-windows-x64-setup.exe
