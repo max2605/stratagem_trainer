@@ -991,6 +991,17 @@ main {
   }
 }
 @media (max-width: 650px) {
+  .app.in-session { padding-bottom: 0; }
+  .in-session .topbar,
+  .in-session .page-heading,
+  .in-session .training-options,
+  .in-session .session-metrics,
+  .in-session .training-footer { display: none; }
+  .in-session main { padding: 0; }
+  .in-session .practice-layout { height: 100dvh; gap: 0; }
+  .in-session .command-card { height: 50dvh; min-height: 0; border-radius: 0; padding-top: max(18px, env(safe-area-inset-top)); flex-shrink: 0; }
+  .in-session .input-pad { height: 50dvh; min-height: 0; border-radius: 0; flex-shrink: 0; padding-bottom: max(20px, env(safe-area-inset-bottom)); }
+  .is-running .sidebar { display: none; }
   .app {
     display: block;
     padding-bottom: 70px;

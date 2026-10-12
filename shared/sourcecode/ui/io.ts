@@ -1,6 +1,7 @@
 import { Capacitor, CapacitorHttp } from "@capacitor/core";
 import { Directory, Encoding, Filesystem } from "@capacitor/filesystem";
 import { Share } from "@capacitor/share";
+import { Haptics, NotificationType } from "@capacitor/haptics";
 import { parsePack, validatePack, type Pack } from "../core";
 
 declare global {
@@ -9,6 +10,10 @@ declare global {
   }
 }
 export const MAX_BYTES = 1024 * 1024;
+export function errorHaptic(): void {
+  if (Capacitor.isNativePlatform()) void Haptics.notification({type:NotificationType.Error}).catch(() => {});
+  else navigator.vibrate?.(60);
+}
 export async function downloadPack(raw: string): Promise<Pack> {
   const url = new URL(raw.trim());
   if (url.protocol !== "https:" || url.username || url.password)

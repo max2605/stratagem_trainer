@@ -22,7 +22,7 @@ import {
 import { builtInPacks } from "../data/catalog";
 import de from "../../application/lang/de.json";
 import en from "../../application/lang/en.json";
-import { downloadPack, exportJSON, readFile } from "./io";
+import { downloadPack, errorHaptic, exportJSON, readFile } from "./io";
 import {
   DEFAULT_SETTINGS,
   loadProfile,
@@ -244,7 +244,7 @@ export default function App() {
       if (result.event === "mistake") {
         setFeedback(timeout ? "timedOut" : "wrong");
         beep(true);
-        if (profile.settings.haptics) navigator.vibrate?.(60);
+        if (profile.settings.haptics) errorHaptic();
         timerRunning.current = false;
         setRemaining(profile.settings.timeLimit);
       } else {
@@ -475,7 +475,7 @@ export default function App() {
   );
   return (
     <div
-      className={`app ${profile.settings.reducedMotion ? "reduced-motion" : ""} ${profile.settings.leftHand ? "left-hand" : ""}`}
+      className={`app ${profile.settings.reducedMotion ? "reduced-motion" : ""} ${profile.settings.leftHand ? "left-hand" : ""} ${tab === "training" && started ? "in-session" : ""} ${tab === "training" && active ? "is-running" : ""}`}
     >
       <aside className="sidebar">
         <a

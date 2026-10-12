@@ -38,5 +38,5 @@ test('pointer inputs register once and mobile pad uses half a screen',async({pag
  for(const d of ['up','right','down']){if(testInfo.project.name==='mobile')await page.getByTestId(`pad-${d}`).tap();else await page.getByTestId(`pad-${d}`).click();}
  await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('stratagem-trainer-profile-v1')!).statistics.completed)).toBe(1);
  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('stratagem-trainer-profile-v1')!).statistics.mistakes)).toBe(0);
- if(testInfo.project.name==='mobile'){const box=await page.locator('.input-pad').boundingBox();expect(box!.height).toBeGreaterThanOrEqual((page.viewportSize()!.height*.5)-2);}
+ if(testInfo.project.name==='mobile'){const box=await page.locator('.input-pad').boundingBox();expect(box!.height).toBeGreaterThanOrEqual((page.viewportSize()!.height*.5)-2);expect(box!.y+box!.height).toBeLessThanOrEqual(page.viewportSize()!.height+1);expect(await page.evaluate(()=>document.documentElement.scrollHeight)).toBeLessThanOrEqual(page.viewportSize()!.height+1);}
 });
