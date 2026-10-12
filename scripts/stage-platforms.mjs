@@ -11,10 +11,15 @@ const artifact = args.includes('--artifact') ? args[args.indexOf('--artifact') +
 if (selected.some((platform) => !platforms.includes(platform))) throw new Error('Unknown platform.');
 const exists = async (filename) => access(filename).then(() => true, () => false);
 const packageInfo = JSON.parse(await readFile(path.join(root, 'package.json'), 'utf8'));
-const sources = ['src', 'shared', 'public', 'desktop', 'scripts', 'tests', 'docs', '.github', 'package.json', 'package-lock.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'tsconfig.json', 'tsconfig.app.json', 'tsconfig.node.json', 'vite.config.ts', 'vitest.config.ts', 'playwright.config.ts', 'index.html', 'capacitor.config.ts', 'electron-builder.yml', 'README.md', 'LICENSE', 'AGENTS.md'];
+const sources = ['src', 'shared', 'public', 'desktop', 'scripts', 'tests', 'docs', '.github', '.gitignore', '.gitattributes', 'android/sourcecode/native', 'iphone/sourcecode/native', 'package.json', 'package-lock.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'tsconfig.json', 'tsconfig.app.json', 'tsconfig.node.json', 'vite.config.ts', 'vitest.config.ts', 'playwright.config.ts', 'index.html', 'capacitor.config.ts', 'electron-builder.yml', 'README.md', 'LICENSE', 'AGENTS.md'];
+const sourceCaches = new Set(['node_modules', '.git', '.gradle', 'build', 'Pods', 'DerivedData', '.swiftpm', 'xcuserdata']);
 
 async function copyIfExists(source, destination) {
-  if (await exists(source)) await cp(source, destination, { recursive: true, force: true });
+  if (await exists(source)) await cp(source, destination, {
+    recursive: true,
+    force: true,
+    filter: (filename) => !path.relative(source, filename).split(path.sep).some((part) => sourceCaches.has(part)),
+  });
 }
 
 async function findAssets(folder) {
