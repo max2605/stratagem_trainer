@@ -1,0 +1,45 @@
+{
+  "name": "stratagem-trainer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline multilingual Helldivers 2 stratagem trainer",
+  "author": "max2605",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && node scripts/copy-assets.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx --test shared/sourcecode/tests/*.test.ts shared/sourcecode/data/catalog.test.ts",
+    "test:e2e": "playwright test",
+    "check": "tsc --noEmit",
+    "stage:platforms": "node scripts/stage-platforms.mjs",
+    "desktop:dev": "electron .",
+    "dist:desktop": "electron-builder --config electron-builder.yml",
+    "mobile:sync": "cap sync"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/filesystem": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "@capacitor/share": "^8.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.0.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "electron": "^41.0.0",
+    "electron-builder": "^26.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.2.0"
+  }
+}
