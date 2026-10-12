@@ -1,0 +1,1 @@
+Eigene Touch-Beschriftungen lassen die Einstellungsseite auf 390px-Geräten horizontal überlaufen. Dadurch skaliert der mobile Browser die Seite und Navigationsklicks können bei einem anderen Element landen. Grid-Mindestbreiten, Eingabebreiten und Panel-Shrink korrigieren; Sicherungsrunde und horizontale Breite mit mobilen Tests prüfen.

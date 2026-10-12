@@ -9,3 +9,5 @@ Browser/native local storage keeps user packs, groups, favorites, settings and s
 CI verifies logic/data/storage/downloader and browser behavior before native jobs. Native jobs stage each requested platform layout and release checksums. Pages deploys the PWA from main. The signing workflow requires configured Apple credentials and is separate from unsigned development artifacts.
 
 Root owns GitHub issue-linked commits. `codex/issues.json` records original issues. See docs for sources, installation, limits and operator procedures.
+
+On 2026-10-12 the user explicitly chose the Safari-installable offline PWA as the iPhone delivery. Apple certificate/provisioning setup is optional and is not required to complete this project. Native unsigned iOS artifacts remain available for developers.

@@ -31,12 +31,12 @@ test('invalid imports are rejected and HTTPS downloads are validated',async({pag
 });
 test('language, custom display and key mapping survive reload',async({page})=>{
  await page.getByRole('button',{name:'Settings',exact:true}).click();await page.getByLabel('Input pad display').selectOption('custom');await page.getByLabel('Up',{exact:true}).fill('NORTH');await page.getByRole('button',{name:'↑ W / ↑',exact:true}).click();await page.keyboard.press('i');await page.reload();await page.getByRole('button',{name:'Start training'}).click();await expect(page.getByTestId('pad-up')).toContainText('NORTH');
- await page.getByRole('combobox',{name:'Language'}).selectOption('de');await expect(page.getByRole('button',{name:'Einstellungen',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Pause'}).click();await page.getByRole('button',{name:'Settings',exact:true}).click();await page.getByRole('combobox',{name:'Language'}).selectOption('de');await expect(page.getByRole('button',{name:'Einstellungen',exact:true})).toBeVisible();
 });
 test('pointer inputs register once and mobile pad uses half a screen',async({page},testInfo)=>{
  await page.getByRole('button',{name:'Library',exact:true}).click();await page.locator('input[type=file]').first().setInputFiles({name:'test.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(custom))});await page.getByRole('button',{name:'None',exact:true}).click();await page.getByRole('checkbox',{name:'Test Pack',exact:true}).check();await page.getByRole('button',{name:'Training',exact:true}).click();await page.getByRole('button',{name:'Start training'}).click();
- for(const d of ['up','right','down']){if(testInfo.project.name==='mobile')await page.getByTestId(`pad-${d}`).tap();else await page.getByTestId(`pad-${d}`).click();}
+ for(const d of ['up','right','down']){if(testInfo.project.use.isMobile)await page.getByTestId(`pad-${d}`).tap();else await page.getByTestId(`pad-${d}`).click();}
  await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('stratagem-trainer-profile-v1')!).statistics.completed)).toBe(1);
  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('stratagem-trainer-profile-v1')!).statistics.mistakes)).toBe(0);
- if(testInfo.project.name==='mobile'){const box=await page.locator('.input-pad').boundingBox();expect(box!.height).toBeGreaterThanOrEqual((page.viewportSize()!.height*.5)-2);expect(box!.y+box!.height).toBeLessThanOrEqual(page.viewportSize()!.height+1);expect(await page.evaluate(()=>document.documentElement.scrollHeight)).toBeLessThanOrEqual(page.viewportSize()!.height+1);}
+ if(testInfo.project.use.isMobile){const box=await page.locator('.input-pad').boundingBox();expect(box!.height).toBeGreaterThanOrEqual((page.viewportSize()!.height*.5)-2);expect(box!.y+box!.height).toBeLessThanOrEqual(page.viewportSize()!.height+1);expect(await page.evaluate(()=>document.documentElement.scrollHeight)).toBeLessThanOrEqual(page.viewportSize()!.height+1);}
 });

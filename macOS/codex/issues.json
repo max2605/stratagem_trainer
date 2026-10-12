@@ -22,5 +22,17 @@
   "verification": {
     "url": "https://github.com/max2605/stratagem_trainer/issues/6",
     "number": 6
+  },
+  "mobileLayout": {
+    "number": 7,
+    "url": "https://github.com/max2605/stratagem_trainer/issues/7"
+  },
+  "offlineCache": {
+    "number": 8,
+    "url": "https://github.com/max2605/stratagem_trainer/issues/8"
+  },
+  "responsiveSettings": {
+    "number": 9,
+    "url": "https://github.com/max2605/stratagem_trainer/issues/9"
   }
 }

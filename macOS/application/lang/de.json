@@ -130,5 +130,10 @@
   "restoreHint": "Import ersetzt Einstellungen und Fortschritt; eigene Pakete werden ergänzt.",
   "back": "Zurück",
   "appName": "Stratagem Trainer",
-  "catalogSnapshot": "2026-10-12"
+  "catalogSnapshot": "2026-10-12",
+  "category_common": "Allgemein",
+  "category_supply": "Ausrüstung",
+  "category_offensive": "Angriff",
+  "category_defensive": "Verteidigung",
+  "category_mission": "Mission"
 }

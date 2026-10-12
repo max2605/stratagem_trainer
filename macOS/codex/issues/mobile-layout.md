@@ -1,0 +1,1 @@
+Das Eingabefeld hat 50dvh Höhe, aber die darüberliegende Oberfläche zwingt auf schmalen Handys zum Scrollen. Im laufenden Training sollen Befehl und Touch-Feld zusammen genau einen Bildschirm belegen. Navigation über Pause weiterhin ermöglichen und mobile Bedienung visuell prüfen.

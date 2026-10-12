@@ -625,7 +625,7 @@ export default function App() {
                   </h2>
                   {item && (
                     <p className="command-category">
-                      {item.category ?? item.packName}
+                    {item.category ? t(`category_${item.category}`) : item.packName}
                     </p>
                   )}
                   <div
