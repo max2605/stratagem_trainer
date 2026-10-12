@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Stratagem Trainer</string>
+    <string name="title_activity_main">Stratagem Trainer</string>
+    <string name="package_name">io.github.max2605.stratagemtrainer</string>
+    <string name="custom_url_scheme">io.github.max2605.stratagemtrainer</string>
+</resources>

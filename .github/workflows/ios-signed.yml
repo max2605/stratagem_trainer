@@ -1,0 +1,81 @@
+name: Signed iPhone distribution
+
+on:
+  workflow_dispatch:
+    inputs:
+      export_method:
+        description: 'Apple export method (requires a matching distribution profile)'
+        type: choice
+        options: [release-testing, app-store-connect]
+        default: release-testing
+
+permissions:
+  contents: read
+
+jobs:
+  signed-ios:
+    runs-on: macos-26
+    env:
+      CERTIFICATE_BASE64: ${{ secrets.IOS_CERTIFICATE_BASE64 }}
+      CERTIFICATE_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
+      PROFILE_BASE64: ${{ secrets.IOS_PROVISION_PROFILE_BASE64 }}
+      TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+      KEYCHAIN_PASSWORD: ${{ secrets.IOS_KEYCHAIN_PASSWORD }}
+      EXPORT_METHOD: ${{ inputs.export_method }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - name: Require signing inputs
+        run: |
+          for name in CERTIFICATE_BASE64 CERTIFICATE_PASSWORD PROFILE_BASE64 TEAM_ID KEYCHAIN_PASSWORD; do
+            if [ -z "${!name}" ]; then echo "Required repository signing secret is missing: $name"; exit 1; fi
+          done
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - run: node scripts/platform-prepare.mjs ios
+      - name: Import signing identity and provisioning profile
+        run: |
+          printf '%s' "$CERTIFICATE_BASE64" | base64 --decode > "$RUNNER_TEMP/distribution.p12"
+          printf '%s' "$PROFILE_BASE64" | base64 --decode > "$RUNNER_TEMP/profile.mobileprovision"
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$RUNNER_TEMP/signing.keychain-db"
+          security set-keychain-settings -lut 21600 "$RUNNER_TEMP/signing.keychain-db"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$RUNNER_TEMP/signing.keychain-db"
+          security import "$RUNNER_TEMP/distribution.p12" -P "$CERTIFICATE_PASSWORD" -A -t cert -f pkcs12 -k "$RUNNER_TEMP/signing.keychain-db"
+          security set-key-partition-list -S apple-tool:,apple: -k "$KEYCHAIN_PASSWORD" "$RUNNER_TEMP/signing.keychain-db"
+          security list-keychains -d user -s "$RUNNER_TEMP/signing.keychain-db"
+          mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
+          security cms -D -i "$RUNNER_TEMP/profile.mobileprovision" > "$RUNNER_TEMP/profile.plist"
+          PROFILE_UUID=$(/usr/libexec/PlistBuddy -c 'Print UUID' "$RUNNER_TEMP/profile.plist")
+          PROFILE_NAME=$(/usr/libexec/PlistBuddy -c 'Print Name' "$RUNNER_TEMP/profile.plist")
+          cp "$RUNNER_TEMP/profile.mobileprovision" "$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_UUID.mobileprovision"
+          printf 'PROFILE_UUID=%s\nPROFILE_NAME=%s\n' "$PROFILE_UUID" "$PROFILE_NAME" >> "$GITHUB_ENV"
+      - name: Archive and export signed IPA
+        run: |
+          mkdir -p build/mobile
+          xcodebuild -project iphone/sourcecode/native/App/App.xcodeproj -scheme App -configuration Release \
+            -sdk iphoneos -destination 'generic/platform=iOS' -archivePath build/mobile/signed.xcarchive \
+            DEVELOPMENT_TEAM="$TEAM_ID" CODE_SIGN_STYLE=Manual PROVISIONING_PROFILE_SPECIFIER="$PROFILE_NAME" \
+            CODE_SIGN_IDENTITY='Apple Distribution' archive
+          python - <<'PY'
+          import os, plistlib
+          with open('build/mobile/ExportOptions.plist', 'wb') as file:
+              plistlib.dump({'method': os.environ['EXPORT_METHOD'], 'teamID': os.environ['TEAM_ID'], 'signingStyle': 'manual', 'provisioningProfiles': {'io.github.max2605.stratagemtrainer': os.environ['PROFILE_NAME']}}, file)
+          PY
+          xcodebuild -exportArchive -archivePath build/mobile/signed.xcarchive -exportPath build/mobile/export -exportOptionsPlist build/mobile/ExportOptions.plist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: iphone-signed
+          path: build/mobile/export/*.ipa
+          if-no-files-found: error
+      - name: Remove temporary signing material
+        if: always()
+        run: |
+          security delete-keychain "$RUNNER_TEMP/signing.keychain-db" || true
+          rm -f "$RUNNER_TEMP/distribution.p12" "$RUNNER_TEMP/profile.mobileprovision" "$RUNNER_TEMP/profile.plist"
+          if [ -n "${PROFILE_UUID:-}" ]; then rm -f "$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_UUID.mobileprovision"; fi
