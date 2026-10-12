@@ -4,6 +4,9 @@ Die ausführbaren Pakete stammen aus Commit `6d54a5c81761a92d958f7fe1edf146f2f67
 Der [vollständige Build-Lauf](https://github.com/max2605/stratagem_trainer/actions/runs/38313798176)
 hat die gemeinsame Prüfung und alle fünf Plattformjobs erfolgreich abgeschlossen.
 Die nachfolgende Abschlussdokumentation ändert die Anwendung nicht.
+Das Veröffentlichen der Release hat zusätzlich den Tag-Workflow ausgelöst.
+Dieser doppelte Lauf wurde bewusst abgebrochen: Die Release verwendet bereits
+die vollständig geprüften Artefakte aus dem oben verlinkten erfolgreichen Lauf.
 
 - [Web-App](https://max2605.github.io/stratagem_trainer/)
 - [Release und Downloads](https://github.com/max2605/stratagem_trainer/releases/tag/v1.0.0)
