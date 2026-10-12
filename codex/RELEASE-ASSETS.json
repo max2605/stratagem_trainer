@@ -1,0 +1,138 @@
+{
+  "version": "1.0.0",
+  "sourceCommit": "6d54a5c81761a92d958f7fe1edf146f2f6721590",
+  "buildRun": "https://github.com/max2605/stratagem_trainer/actions/runs/38313798176",
+  "release": "https://github.com/max2605/stratagem_trainer/releases/tag/v1.0.0",
+  "draft": false,
+  "publishedAt": "2026-10-12T22:20:48Z",
+  "verifiedAt": "2026-10-12T22:20:51.572Z",
+  "totalBytes": 1755325267,
+  "assets": [
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 1826,
+      "sha256": "ce6aeaa9fe94327645d0c09c6390553a5270df6be093318d2de7810e412af460",
+      "githubDigest": "sha256:ce6aeaa9fe94327645d0c09c6390553a5270df6be093318d2de7810e412af460",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/SHA256SUMS.txt"
+    },
+    {
+      "name": "Stratagem-Trainer-1.0.0-android-debug.apk",
+      "bytes": 4500457,
+      "sha256": "1e8526e1a83b6e1ac4525eb2167f7bfe4faa84625619a48fa3eb2ced8e3bdf76",
+      "githubDigest": "sha256:1e8526e1a83b6e1ac4525eb2167f7bfe4faa84625619a48fa3eb2ced8e3bdf76",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-1.0.0-android-debug.apk"
+    },
+    {
+      "name": "Stratagem-Trainer-1.0.0-linux-x64.tar.gz",
+      "bytes": 113255773,
+      "sha256": "e7c0e36bcfcf2055a0960b3199e74f46615020f3da799206ed28f763dd7ea7f9",
+      "githubDigest": "sha256:e7c0e36bcfcf2055a0960b3199e74f46615020f3da799206ed28f763dd7ea7f9",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-1.0.0-linux-x64.tar.gz"
+    },
+    {
+      "name": "Stratagem-Trainer-1.0.0-linux-x86_64.AppImage",
+      "bytes": 119742098,
+      "sha256": "5e00377041e34e06c0e49cbfb007fa70f2ac161ba8398451acb5add3e5005267",
+      "githubDigest": "sha256:5e00377041e34e06c0e49cbfb007fa70f2ac161ba8398451acb5add3e5005267",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-1.0.0-linux-x86_64.AppImage"
+    },
+    {
+      "name": "Stratagem-Trainer-1.0.0-mac-arm64.dmg",
+      "bytes": 110916627,
+      "sha256": "0f53505719ad3816f139dfc574bf3c62c2e24f89d082bb537d2a93cc367e91de",
+      "githubDigest": "sha256:0f53505719ad3816f139dfc574bf3c62c2e24f89d082bb537d2a93cc367e91de",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-1.0.0-mac-arm64.dmg"
+    },
+    {
+      "name": "Stratagem-Trainer-1.0.0-mac-arm64.zip",
+      "bytes": 110988630,
+      "sha256": "38f3df017dd9cd1b4f2c1ec0cbe047069cb217ba5cceb9cb557c19157f56a6a3",
+      "githubDigest": "sha256:38f3df017dd9cd1b4f2c1ec0cbe047069cb217ba5cceb9cb557c19157f56a6a3",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-1.0.0-mac-arm64.zip"
+    },
+    {
+      "name": "Stratagem-Trainer-1.0.0-mac-x64.dmg",
+      "bytes": 116771871,
+      "sha256": "ee4a5522b2fa26314afc1748f3308e7396e308c65588e5d9c7394ca1afab0391",
+      "githubDigest": "sha256:ee4a5522b2fa26314afc1748f3308e7396e308c65588e5d9c7394ca1afab0391",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-1.0.0-mac-x64.dmg"
+    },
+    {
+      "name": "Stratagem-Trainer-1.0.0-mac-x64.zip",
+      "bytes": 116885702,
+      "sha256": "c116375a287e790b28d5c59022db74f139950c5181f683c87c46686bce72a21a",
+      "githubDigest": "sha256:c116375a287e790b28d5c59022db74f139950c5181f683c87c46686bce72a21a",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-1.0.0-mac-x64.zip"
+    },
+    {
+      "name": "Stratagem-Trainer-1.0.0-windows-x64-portable.exe",
+      "bytes": 88701615,
+      "sha256": "cf4e64d59709134dde9bfc3b1758f5687592e88a28185d7b13ecc0b38f9c3725",
+      "githubDigest": "sha256:cf4e64d59709134dde9bfc3b1758f5687592e88a28185d7b13ecc0b38f9c3725",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-1.0.0-windows-x64-portable.exe"
+    },
+    {
+      "name": "Stratagem-Trainer-1.0.0-windows-x64-setup.exe",
+      "bytes": 88920101,
+      "sha256": "d043b25affb6fb6cde1d2f25134bde945ac99a4d3c614f0c796825c149fb876a",
+      "githubDigest": "sha256:d043b25affb6fb6cde1d2f25134bde945ac99a4d3c614f0c796825c149fb876a",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-1.0.0-windows-x64-setup.exe"
+    },
+    {
+      "name": "Stratagem-Trainer-android-complete.zip",
+      "bytes": 4986137,
+      "sha256": "521e5bcab0b2a5af74ad6906ee1d5ced108ceae371a806a34905bf78da885206",
+      "githubDigest": "sha256:521e5bcab0b2a5af74ad6906ee1d5ced108ceae371a806a34905bf78da885206",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-android-complete.zip"
+    },
+    {
+      "name": "Stratagem-Trainer-iphone-complete.zip",
+      "bytes": 7295995,
+      "sha256": "06240de1c60f8f4f72e63d1a71d1d3bd2d45534646cc941659cd8a94cd42acfd",
+      "githubDigest": "sha256:06240de1c60f8f4f72e63d1a71d1d3bd2d45534646cc941659cd8a94cd42acfd",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-iphone-complete.zip"
+    },
+    {
+      "name": "Stratagem-Trainer-iphone-simulator.zip",
+      "bytes": 1853828,
+      "sha256": "1c7ae7782a4f8c291e7054695df9740bc06f552a5bce92154ffae597fa7974d6",
+      "githubDigest": "sha256:1c7ae7782a4f8c291e7054695df9740bc06f552a5bce92154ffae597fa7974d6",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-iphone-simulator.zip"
+    },
+    {
+      "name": "Stratagem-Trainer-iphone-unsigned-xcarchive.zip",
+      "bytes": 3954067,
+      "sha256": "439cbc42d9e155a9106d9a5ceb8b80c78ac944ffd2c2c083e3a93edd48a6f619",
+      "githubDigest": "sha256:439cbc42d9e155a9106d9a5ceb8b80c78ac944ffd2c2c083e3a93edd48a6f619",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-iphone-unsigned-xcarchive.zip"
+    },
+    {
+      "name": "Stratagem-Trainer-iphone-unsigned.ipa",
+      "bytes": 586485,
+      "sha256": "77b46ebbe943e105c01f10a599904882005d930cbcaeff4613a985cb50088d4f",
+      "githubDigest": "sha256:77b46ebbe943e105c01f10a599904882005d930cbcaeff4613a985cb50088d4f",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-iphone-unsigned.ipa"
+    },
+    {
+      "name": "Stratagem-Trainer-linux-complete.zip",
+      "bytes": 232603033,
+      "sha256": "e18d2ac5b80ff2e3ef6977874acc74ae6e9684d95dc0bec9ada418b2dbbed808",
+      "githubDigest": "sha256:e18d2ac5b80ff2e3ef6977874acc74ae6e9684d95dc0bec9ada418b2dbbed808",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-linux-complete.zip"
+    },
+    {
+      "name": "Stratagem-Trainer-macOS-complete.zip",
+      "bytes": 455119990,
+      "sha256": "f2f82cb4bed9314aacb6acb8bb14547b3c7da1f75000c5e1f7a23e8879a6a788",
+      "githubDigest": "sha256:f2f82cb4bed9314aacb6acb8bb14547b3c7da1f75000c5e1f7a23e8879a6a788",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-macOS-complete.zip"
+    },
+    {
+      "name": "Stratagem-Trainer-windows-complete.zip",
+      "bytes": 178241032,
+      "sha256": "d97959f65fa9c292011491169d0dc419bdd57f64b3d434411fd55dd368a3ae7f",
+      "githubDigest": "sha256:d97959f65fa9c292011491169d0dc419bdd57f64b3d434411fd55dd368a3ae7f",
+      "url": "https://github.com/max2605/stratagem_trainer/releases/download/v1.0.0/Stratagem-Trainer-windows-complete.zip"
+    }
+  ]
+}

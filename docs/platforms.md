@@ -5,7 +5,7 @@ Der Trainer verwendet eine gemeinsame TypeScript-Anwendung. Electron verpackt si
 | Plattform | Download | Verwendung |
 | --- | --- | --- |
 | Windows x64 | `*-windows-x64-portable.exe`, `*-windows-x64-setup.exe` | Portable starten oder per Benutzer installieren |
-| Linux x64 | `*-linux-x64.AppImage`, `*-linux-x64.tar.gz` | AppImage ausführbar machen; alternativ Archiv entpacken und `stratagem-trainer` starten |
+| Linux x64 | `*-linux-x86_64.AppImage`, `*-linux-x64.tar.gz` | AppImage ausführbar machen; alternativ Archiv entpacken und `stratagem-trainer` starten |
 | macOS Intel / Apple Silicon | `*-mac-x64.dmg`, `*-mac-arm64.dmg`, passende ZIPs | DMG öffnen und App nach „Programme“ ziehen |
 | Android | `*-android-debug.apk` | Test-APK auf dem Gerät installieren; Installation aus dieser Downloadquelle erlauben |
 | iPhone / iPad | [Offline-Web-App](https://max2605.github.io/stratagem_trainer/) | Safari → Teilen → Zum Home-Bildschirm; vom Nutzer gewählte iPhone-Auslieferung ohne Apple-Entwicklerzugang |
