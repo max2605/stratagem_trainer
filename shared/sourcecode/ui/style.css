@@ -828,10 +828,16 @@ main {
 .label-grid input { width: 100%; }
 .key-bindings {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 9px;
   margin: 15px 0 10px;
 }
+.binding-row { min-width: 0; }
+.binding-row > span { display: block; margin-bottom: 6px; color: #c0ccb0; }
+.binding-keys { display: flex; flex-wrap: wrap; gap: 6px; }
+.binding-entry { display: flex; max-width: 100%; }
+.binding-entry .secondary { min-width: 0; overflow-wrap: anywhere; }
+.binding-remove { padding: 6px 9px; }
 .time-setting {
   margin-top: 20px;
 }

@@ -23,6 +23,7 @@ import { builtInPacks } from "../data/catalog";
 import de from "../../application/lang/de.json";
 import en from "../../application/lang/en.json";
 import { downloadPack, errorHaptic, exportJSON, readFile } from "./io";
+import { formatUserError } from "./error-message";
 import {
   DEFAULT_SETTINGS,
   loadProfile,
@@ -83,7 +84,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [draft, setDraft] = useState<Pack>(freshPack);
   const [jsonDraft, setJsonDraft] = useState("");
-  const [capture, setCapture] = useState<Direction | null>(null);
+  const [capture, setCapture] = useState<{ direction: Direction; index: number } | null>(null);
   const [confirm, setConfirm] = useState("");
   const [remaining, setRemaining] = useState(profile.settings.timeLimit);
   const timerRunning = useRef(false);
@@ -278,31 +279,32 @@ export default function App() {
   }, [remaining, active, submit]);
   useEffect(() => {
     function keydown(event: KeyboardEvent) {
-      if (event.ctrlKey || event.metaKey || event.altKey || event.repeat)
-        return;
+      if (event.repeat) return;
       if (capture) {
         event.preventDefault();
         if (event.code === "Escape") {
           setCapture(null);
           return;
         }
+        if (event.ctrlKey || event.metaKey || event.altKey) {
+          notify(t("keyUnsupported"));
+          return;
+        }
         try {
+          const entries = [...profile.settings.keys[capture.direction]];
+          entries[capture.index] = event.code;
           const keys = {
             ...profile.settings.keys,
-            [capture]: [
-              event.code,
-              ...DEFAULT_KEY_BINDINGS[capture].filter(
-                (k) => k.startsWith("Arrow") && k !== event.code,
-              ),
-            ],
+            [capture.direction]: entries,
           };
           setting("keys", validateKeyBindings(keys));
           setCapture(null);
-        } catch {
-          notify(t("keyDuplicate"));
+        } catch (error) {
+          notify(formatUserError(error, t));
         }
         return;
       }
+      if (event.ctrlKey || event.metaKey || event.altKey) return;
       if (
         event.target instanceof HTMLElement &&
         (event.target.isContentEditable ||
@@ -371,14 +373,7 @@ export default function App() {
     notify(t("saved"));
   }
   function handleError(error: unknown) {
-    const e = error as { message?: string; code?: string; path?: string };
-    notify(
-      e.code?.startsWith("pack.")
-        ? `${t("invalidPack")}: ${e.code.replace("pack.", "")} (${e.path ?? ""})`
-        : e.message && dictionary[e.message]
-          ? t(e.message)
-          : `${t("downloadError")} ${e.message ?? ""}`,
-    );
+    notify(formatUserError(error, t));
   }
   async function importFile(file?: File) {
     if (!file) return;
@@ -1310,18 +1305,48 @@ export default function App() {
                   <p className="help">{t("keyHint")}</p>
                   <div className="key-bindings">
                     {DIRECTIONS.map((d) => (
-                      <button
-                        className="secondary"
-                        key={d}
-                        onClick={() => setCapture(d)}
-                      >
-                        {ARROWS[d]}{" "}
-                        {capture === d
-                          ? t("capture")
-                          : profile.settings.keys[d]
-                              .map(formatKeyCode)
-                              .join(" / ")}
-                      </button>
+                      <div className="binding-row" key={d}>
+                        <span>{ARROWS[d]} {t(d)}</span>
+                        <div className="binding-keys">
+                          {profile.settings.keys[d].map((code, index) => (
+                            <div className="binding-entry" key={index}>
+                              <button
+                                className="secondary"
+                                aria-label={`${t(d)} ${t("keyBindings")} ${index + 1}`}
+                                onClick={() => setCapture({ direction: d, index })}
+                              >
+                                {capture?.direction === d && capture.index === index
+                                  ? t("capture")
+                                  : formatKeyCode(code)}
+                              </button>
+                              {profile.settings.keys[d].length > 1 && (
+                                <button
+                                  className="subtle binding-remove"
+                                  aria-label={`${t(d)} ${t("clearBinding")} ${index + 1}`}
+                                  onClick={() => {
+                                    setCapture(null);
+                                    setting("keys", {
+                                      ...profile.settings.keys,
+                                      [d]: profile.settings.keys[d].filter((_, i) => i !== index),
+                                    });
+                                  }}
+                                >×</button>
+                              )}
+                            </div>
+                          ))}
+                          {profile.settings.keys[d].length < 8 && (
+                            <button
+                              className="secondary"
+                              aria-label={`${t(d)} ${t("addBinding")}`}
+                              onClick={() => setCapture({ direction: d, index: profile.settings.keys[d].length })}
+                            >
+                              {capture?.direction === d && capture.index === profile.settings.keys[d].length
+                                ? t("capture")
+                                : "+"}
+                            </button>
+                          )}
+                        </div>
+                      </div>
                     ))}
                   </div>
                   <button

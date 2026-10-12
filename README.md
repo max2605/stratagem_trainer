@@ -40,7 +40,7 @@ corepack enable
 pnpm install --frozen-lockfile
 pnpm dev
 pnpm test
-pnpm test:e2e # zuvor pnpm exec playwright install chromium
+pnpm test:e2e # zuvor pnpm exec playwright install chromium webkit
 pnpm build
 pnpm stage:platforms
 pnpm dist:desktop --win --x64 --publish never

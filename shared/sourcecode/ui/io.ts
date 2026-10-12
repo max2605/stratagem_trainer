@@ -15,7 +15,12 @@ export function errorHaptic(): void {
   else navigator.vibrate?.(60);
 }
 export async function downloadPack(raw: string): Promise<Pack> {
-  const url = new URL(raw.trim());
+  let url: URL;
+  try {
+    url = new URL(raw.trim());
+  } catch {
+    throw new Error("invalidUrl");
+  }
   if (url.protocol !== "https:" || url.username || url.password)
     throw new Error("httpsOnly");
   if (url.hostname === "github.com" && url.pathname.includes("/blob/")) {

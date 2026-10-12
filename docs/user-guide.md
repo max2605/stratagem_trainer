@@ -47,9 +47,12 @@ Befehl** steht standardmäßig auf **Ohne Limit**. Bei 3, 5, 10, 15 oder 30 Seku
 beginnt der Countdown mit der Eingabe. Ein Ablauf zählt als Fehler; der Befehl
 kann erneut versucht werden.
 
-Zur eigenen Tastenbelegung wähle die Richtung unter **Tastenbelegung** und drücke
-die gewünschte Taste. Esc bricht die Belegung ab. Eine Taste darf nur einer
-Richtung gehören. Die zugehörigen Pfeiltasten bleiben zusätzlich verfügbar.
+Zur eigenen Tastenbelegung wähle eine Taste unter **Tastenbelegung** und drücke
+die gewünschte neue Taste. Mit **+** ergänzt du weitere Belegungen, mit **×**
+entfernst du eine. Pro Richtung sind 1–8 Tasten möglich; auch Pfeil- und
+Funktionstasten lassen sich zuordnen. Esc bricht die Belegung ab und bleibt für
+Pause reserviert. Eine Taste darf nur einer Richtung gehören. Zum Tauschen
+bereits verwendeter Tasten entferne zuerst deren bisherige Belegung.
 **WASD + ↑ ↓ ← →** stellt die Standardbelegung wieder her. Die App verwendet die
 physische Tastenposition; die Anzeige des Eingabefelds wird getrennt eingestellt.
 

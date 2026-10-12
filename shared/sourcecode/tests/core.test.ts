@@ -315,3 +315,55 @@ test('key validation rejects ambiguous, missing, dangerous, and reserved mapping
   ];
   for (const value of cases) assert.throws(() => validateKeyBindings(value), KeyBindingError);
 });
+
+test('extended physical keys map consistently and survive JSON persistence', () => {
+  const bindings = validateKeyBindings({
+    up: ['F24', 'CapsLock'],
+    down: ['IntlBackslash', 'NumpadComma'],
+    left: ['IntlRo', 'ContextMenu'],
+    right: ['IntlYen', 'AudioVolumeMute'],
+  });
+  const restored = validateKeyBindings(JSON.parse(JSON.stringify(bindings)));
+  assert.deepEqual(restored, bindings);
+  assert.equal(directionForKey('F24', restored), 'up');
+  assert.equal(directionForKey('CapsLock', restored), 'up');
+  assert.equal(directionForKey('IntlBackslash', restored), 'down');
+  assert.equal(directionForKey('NumpadComma', restored), 'down');
+  assert.equal(directionForKey('IntlRo', restored), 'left');
+  assert.equal(directionForKey('IntlYen', restored), 'right');
+  assert.equal(directionForKey('ArrowUp', restored), undefined);
+  assert.deepEqual(DEFAULT_KEY_BINDINGS.up, ['KeyW', 'ArrowUp']);
+});
+
+test('function-key boundaries, international layouts, and keypad variants are accepted', () => {
+  const codes = [
+    ...Array.from({ length: 24 }, (_, index) => `F${index + 1}`),
+    'Lang1', 'Lang5', 'Convert', 'NonConvert', 'KanaMode',
+    'NumLock', 'ScrollLock', 'PrintScreen', 'Pause', 'Help',
+    'NumpadEqual', 'NumpadClear', 'NumpadParenLeft', 'NumpadParenRight',
+    'BrowserBack', 'MediaPlayPause',
+  ];
+  for (const code of codes) {
+    const bindings = validateKeyBindings({ up: [code], down: ['KeyS'], left: ['KeyA'], right: ['KeyD'] });
+    assert.equal(directionForKey(code, bindings), 'up');
+  }
+  const eightKeys = validateKeyBindings({ up: codes.slice(0, 8), down: ['KeyS'], left: ['KeyA'], right: ['KeyD'] });
+  assert.equal(eightKeys.up.length, 8);
+});
+
+test('extended binding errors distinguish invalid keys, duplicate keys, and invalid mappings', () => {
+  function expectKeyError(value: unknown, code: KeyBindingError['code']): void {
+    assert.throws(() => validateKeyBindings(value), (error: unknown) => {
+      assert.ok(error instanceof KeyBindingError);
+      assert.equal(error.code, code);
+      return true;
+    });
+  }
+  for (const key of [
+    'Escape', 'ShiftLeft', 'ShiftRight', 'ControlLeft', 'ControlRight', 'AltLeft', 'AltRight', 'MetaLeft', 'MetaRight', 'Fn',
+    'F0', 'F25', 'F01', 'F100', 'Lang6', 'IntlUnknown', 'Numpad10', 'Unidentified', '', 'F1\n',
+  ]) expectKeyError({ up: [key], down: ['KeyS'], left: ['KeyA'], right: ['KeyD'] }, 'keys.invalid_key');
+  expectKeyError({ up: ['F13'], down: ['F13'], left: ['KeyA'], right: ['KeyD'] }, 'keys.duplicate_key');
+  expectKeyError({ up: ['CapsLock', 'CapsLock'], down: ['KeyS'], left: ['KeyA'], right: ['KeyD'] }, 'keys.duplicate_key');
+  expectKeyError({ up: Array.from({ length: 9 }, (_, index) => `F${index + 1}`), down: ['KeyS'], left: ['KeyA'], right: ['KeyD'] }, 'keys.invalid_mapping');
+});

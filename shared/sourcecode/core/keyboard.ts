@@ -20,7 +20,21 @@ export class KeyBindingError extends Error {
 }
 
 // Physical KeyboardEvent.code values keep custom mappings stable across keyboard layouts.
-const validCode = /^(?:Key[A-Z]|Digit[0-9]|Numpad[0-9]|Numpad(?:Add|Subtract|Multiply|Divide|Decimal|Enter)|Arrow(?:Up|Down|Left|Right)|Space|Enter|Tab|Backspace|Delete|Insert|Home|End|PageUp|PageDown|Comma|Period|Slash|Backslash|Semicolon|Quote|BracketLeft|BracketRight|Backquote|Minus|Equal)$/;
+// https://www.w3.org/TR/uievents-code/ — Esc pauses; held modifier keys are reserved.
+const codeFamilies = /^(?:Key[A-Z]|Digit[0-9]|Numpad[0-9]|F(?:[1-9]|1[0-9]|2[0-4])|Lang[1-5])$/;
+const namedCodes = new Set([
+  'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+  'Space', 'Enter', 'Tab', 'Backspace', 'Delete', 'Insert', 'Home', 'End', 'PageUp', 'PageDown', 'Help',
+  'Comma', 'Period', 'Slash', 'Backslash', 'Semicolon', 'Quote', 'BracketLeft', 'BracketRight', 'Backquote', 'Minus', 'Equal',
+  'IntlBackslash', 'IntlRo', 'IntlYen', 'Convert', 'NonConvert', 'KanaMode', 'Hiragana', 'Katakana',
+  'CapsLock', 'NumLock', 'ScrollLock', 'ContextMenu', 'PrintScreen', 'Pause',
+  'NumpadAdd', 'NumpadSubtract', 'NumpadMultiply', 'NumpadDivide', 'NumpadDecimal', 'NumpadEnter',
+  'NumpadComma', 'NumpadEqual', 'NumpadBackspace', 'NumpadClear', 'NumpadClearEntry', 'NumpadParenLeft', 'NumpadParenRight',
+  'NumpadHash', 'NumpadStar', 'NumpadMemoryAdd', 'NumpadMemoryClear', 'NumpadMemoryRecall', 'NumpadMemoryStore', 'NumpadMemorySubtract',
+  'BrowserBack', 'BrowserForward', 'BrowserRefresh', 'BrowserStop', 'BrowserSearch', 'BrowserFavorites', 'BrowserHome',
+  'AudioVolumeMute', 'AudioVolumeDown', 'AudioVolumeUp', 'MediaTrackNext', 'MediaTrackPrevious', 'MediaStop', 'MediaPlayPause', 'MediaSelect',
+  'LaunchMail', 'LaunchApp1', 'LaunchApp2', 'Eject',
+]);
 
 export function normalizeKeyCode(key: string): string {
   if (/^[a-z]$/i.test(key)) return `Key${key.toUpperCase()}`;
@@ -50,7 +64,7 @@ export function validateKeyBindings(value: unknown): KeyBindings {
     result[direction] = Array.from(entries, (entry: unknown): string => {
       if (typeof entry !== 'string') throw new KeyBindingError('keys.invalid_key', 'Expected a keyboard key code.');
       const code = normalizeKeyCode(entry);
-      if (!validCode.test(code)) throw new KeyBindingError('keys.invalid_key', `Unsupported keyboard key: ${entry}`);
+      if (!codeFamilies.test(code) && !namedCodes.has(code)) throw new KeyBindingError('keys.invalid_key', `Unsupported keyboard key: ${entry}`);
       if (assigned.has(code)) throw new KeyBindingError('keys.duplicate_key', `The key ${code} is assigned more than once.`);
       assigned.add(code);
       return code;

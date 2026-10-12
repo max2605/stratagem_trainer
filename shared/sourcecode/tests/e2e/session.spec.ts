@@ -32,7 +32,8 @@ async function storedProfile(page: Page): Promise<Profile> {
 }
 
 async function replaceProfile(page: Page, profile: Profile): Promise<void> {
-  await page.evaluate(({ key, profile }) => localStorage.setItem(key, JSON.stringify(profile)), { key: storageKey, profile });
+  // Apply the fixture before React mounts on reload, so a pending save cannot overwrite it.
+  await page.evaluate((profile) => sessionStorage.setItem('test-pending-profile', JSON.stringify(profile)), profile);
   await page.reload();
 }
 
@@ -48,7 +49,11 @@ test.beforeEach(async ({ page }, testInfo) => {
     await page.clock.install({ time: new Date('2026-10-12T12:00:00Z') });
   }
   await page.addInitScript(({ key, profile }) => {
-    if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify(profile));
+    const pending = sessionStorage.getItem('test-pending-profile');
+    if (pending) {
+      localStorage.setItem(key, pending);
+      sessionStorage.removeItem('test-pending-profile');
+    } else if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify(profile));
   }, { key: storageKey, profile });
   await page.goto('/');
   await expect(page.getByTestId('current-name')).toHaveText('Practice command');
