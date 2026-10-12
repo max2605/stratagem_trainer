@@ -20,6 +20,7 @@ playwright-report/
 **/application/*.dmg
 **/application/*.zip
 **/application/*.tar.gz
+**/application/SHA256SUMS.txt
 *.p12
 *.mobileprovision
 *.keystore
