@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "chemical-agents",
+  "name": "Chemical Agents",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2024-09-19",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2024/09/12/helldivers-2-the-chemical-agents-warbond-launches-sept-19/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Directional codes verified from the linked community sources.",
+  "stratagems": [
+    {
+      "id": "tx-41-sterilizer",
+      "name": "TX-41 Sterilizer",
+      "sequence": [
+        "down",
+        "left",
+        "up",
+        "down",
+        "left"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/TX-41_Sterilizer",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "ax-tx-13-dog-breath",
+      "name": "AX/TX-13 Dog Breath",
+      "sequence": [
+        "down",
+        "up",
+        "left",
+        "up",
+        "right",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/AX%2FTX-13_Dog_Breath",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

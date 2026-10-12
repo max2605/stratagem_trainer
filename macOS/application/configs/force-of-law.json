@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "force-of-law",
+  "name": "Force of Law",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2025-06-12",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2025/06/05/helldivers-2-force-of-law-warbond-launches-june-12/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Directional codes verified from the linked community sources.",
+  "stratagems": [
+    {
+      "id": "gl-52-de-escalator",
+      "name": "GL-52 De-Escalator",
+      "sequence": [
+        "down",
+        "right",
+        "up",
+        "left",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/GL-52_De-Escalator",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "ax-arc-3-k-9",
+      "name": "AX/ARC-3 K-9",
+      "sequence": [
+        "down",
+        "up",
+        "left",
+        "up",
+        "right",
+        "left"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/AX%2FARC-3_K-9",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

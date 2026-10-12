@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "righteous-revenants",
+  "name": "Righteous Revenants",
+  "kind": "warbond",
+  "description": "No new stratagem call-in codes in this Warbond.",
+  "releaseDate": "2025-12-18",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2025/12/11/the-helldivers-2-x-killzone-items-return-as-a-legendary-warbond-dec-18/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Helldivers 2 x Killzone. The freely requisitioned StA-X3 W.A.S.P. Launcher is not a reward in this Warbond.",
+  "stratagems": []
+}

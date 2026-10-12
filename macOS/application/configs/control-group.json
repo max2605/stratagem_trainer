@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "control-group",
+  "name": "Control Group",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2025-07-17",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/?p=407597",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Directional codes verified from the linked community sources.",
+  "stratagems": [
+    {
+      "id": "plas-45-epoch",
+      "name": "PLAS-45 Epoch",
+      "sequence": [
+        "down",
+        "left",
+        "up",
+        "left",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/PLAS-45_Epoch",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "a-las-98-laser-sentry",
+      "name": "A/LAS-98 Laser Sentry",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "down",
+        "up",
+        "right"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/A%2FLAS-98_Laser_Sentry",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "lift-182-warp-pack",
+      "name": "LIFT-182 Warp Pack",
+      "sequence": [
+        "down",
+        "left",
+        "right",
+        "down",
+        "left",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/LIFT-182_Warp_Pack",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

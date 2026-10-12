@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026-10-12",
+  "verifiedAt": "2026-10-12",
+  "packs": [
+    "base-game.json",
+    "mission-practice.json",
+    "helldivers-mobilize.json",
+    "steeled-veterans.json",
+    "cutting-edge.json",
+    "democratic-detonation.json",
+    "polar-patriots.json",
+    "viper-commandos.json",
+    "freedom-s-flame.json",
+    "chemical-agents.json",
+    "truth-enforcers.json",
+    "urban-legends.json",
+    "servants-of-freedom.json",
+    "borderline-justice.json",
+    "masters-of-ceremony.json",
+    "force-of-law.json",
+    "control-group.json",
+    "obedient-democracy-support-troopers.json",
+    "dust-devils.json",
+    "python-commandos.json",
+    "righteous-revenants.json",
+    "redacted-regiment.json",
+    "siege-breakers.json",
+    "entrenched-division.json",
+    "exo-experts.json",
+    "castellan-s-creed.json",
+    "ironclad-democracy.json"
+  ],
+  "totalWarbonds": 25,
+  "totalStratagems": 114,
+  "source": [
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://www.playstation.com/en-us/games/helldivers-2/latest-news-and-updates/"
+  ],
+  "excluded": [
+    {
+      "name": "Orbital Illumination Flare",
+      "reason": "Unavailable. The pinned community database also disagrees with the wiki code; no playable entry is shipped."
+    },
+    {
+      "name": "Dark Fluid Vessel",
+      "reason": "Historical limited mission equipment; excluded from current practice packs."
+    },
+    {
+      "name": "M-104 Incinerator FRV",
+      "reason": "Historical operational variation; currently unavailable after the Census Thunder outcome."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "redacted-regiment",
+  "name": "Redacted Regiment",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2026-01-22",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2026/01/13/helldivers-2-redacted-regiment-warbond-launches-jan-20/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Actual release was delayed to January 22, 2026; the original announcement says January 20.",
+  "stratagems": [
+    {
+      "id": "b-md-c4-pack",
+      "name": "B/MD C4 Pack",
+      "sequence": [
+        "down",
+        "right",
+        "up",
+        "up",
+        "right",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/B%2FMD_C4_Pack",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

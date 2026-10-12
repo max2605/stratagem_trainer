@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "ironclad-democracy",
+  "name": "Ironclad Democracy",
+  "kind": "warbond",
+  "description": "No new stratagem call-in codes in this Warbond.",
+  "releaseDate": "2026-09-22",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2026/09/15/helldivers-2-ironclad-democracy-warbond-launches-sept-22/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Surplus EAT Allocation is a booster granting uses of the existing EAT-17, not a new stratagem code. TD-110 Maelstrom is a separate Armored Eagle campaign reward.",
+  "stratagems": []
+}

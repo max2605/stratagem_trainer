@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "cutting-edge",
+  "name": "Cutting Edge",
+  "kind": "warbond",
+  "description": "No new stratagem call-in codes in this Warbond.",
+  "releaseDate": "2024-03-14",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2024/03/07/helldivers-2-new-warbond-launches-march-14-first-look-at-new-weapons-armor-and-more/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "This released Warbond contains no stratagem call-in codes. Its weapons, armor, boosters and cosmetics are not directional call-ins.",
+  "stratagems": []
+}

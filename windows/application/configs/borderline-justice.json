@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "borderline-justice",
+  "name": "Borderline Justice",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2025-03-20",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2025/03/18/helldivers-2-borderline-justice-warbond-launches-march-20/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Directional codes verified from the linked community sources.",
+  "stratagems": [
+    {
+      "id": "lift-860-hover-pack",
+      "name": "LIFT-860 Hover Pack",
+      "sequence": [
+        "down",
+        "up",
+        "up",
+        "down",
+        "left",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/LIFT-860_Hover_Pack",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

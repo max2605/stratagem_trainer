@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "truth-enforcers",
+  "name": "Truth Enforcers",
+  "kind": "warbond",
+  "description": "No new stratagem call-in codes in this Warbond.",
+  "releaseDate": "2024-10-31",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2024/10/24/helldivers-2-truth-enforcers-warbond-launches-oct-31/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "This released Warbond contains no stratagem call-in codes. Its weapons, armor, boosters and cosmetics are not directional call-ins.",
+  "stratagems": []
+}

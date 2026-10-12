@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "helldivers-mobilize",
+  "name": "Helldivers Mobilize!",
+  "kind": "warbond",
+  "description": "No new stratagem call-in codes in this Warbond.",
+  "releaseDate": "2024-02-08",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://helldivers.wiki.gg/wiki/Helldivers_Mobilize_Standard_Warbond",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "This released Warbond contains no stratagem call-in codes. Its weapons, armor, boosters and cosmetics are not directional call-ins.",
+  "stratagems": []
+}

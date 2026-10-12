@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "polar-patriots",
+  "name": "Polar Patriots",
+  "kind": "warbond",
+  "description": "No new stratagem call-in codes in this Warbond.",
+  "releaseDate": "2024-05-09",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2024/05/02/new-helldivers-2-warbond-brings-trap-laying-weaponry-arctic-themed-armor-and-more-may-9/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "This released Warbond contains no stratagem call-in codes. Its weapons, armor, boosters and cosmetics are not directional call-ins.",
+  "stratagems": []
+}

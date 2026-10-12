@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "exo-experts",
+  "name": "Exo Experts",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2026-04-28",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2026/04/21/helldivers-2-the-exo-experts-warbond-drops-april-28/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Directional codes verified from the linked community sources.",
+  "stratagems": [
+    {
+      "id": "mgx-42-bullet-storm",
+      "name": "MGX-42 Bullet Storm",
+      "sequence": [
+        "down",
+        "left",
+        "down",
+        "right",
+        "up",
+        "left"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/MGX-42_Bullet_Storm",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "exo-51-lumberer-exosuit",
+      "name": "EXO-51 Lumberer Exosuit",
+      "sequence": [
+        "left",
+        "down",
+        "right",
+        "up",
+        "right",
+        "left",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/EXO-51_Lumberer_Exosuit",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "exo-55-breakthrough-exosuit",
+      "name": "EXO-55 Breakthrough Exosuit",
+      "sequence": [
+        "left",
+        "down",
+        "right",
+        "left",
+        "right",
+        "down",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/EXO-55_Breakthrough_Exosuit",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1099 @@
+{
+  "schemaVersion": 1,
+  "id": "base-game",
+  "name": "Base Game & Free Updates",
+  "kind": "base",
+  "description": "Core stratagems, requisition unlocks and released campaign rewards. Warbond rewards are in their own packs.",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://helldivers.wiki.gg/wiki/Stratagems",
+    "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+  ],
+  "stratagems": [
+    {
+      "id": "reinforce",
+      "name": "Reinforce",
+      "sequence": [
+        "up",
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "category": "common",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Reinforce",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "sos-beacon",
+      "name": "SOS Beacon",
+      "sequence": [
+        "up",
+        "down",
+        "right",
+        "up"
+      ],
+      "category": "common",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/SOS_Beacon",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "resupply",
+      "name": "Resupply",
+      "sequence": [
+        "down",
+        "down",
+        "up",
+        "right"
+      ],
+      "category": "common",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Resupply",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eagle-rearm",
+      "name": "Eagle Rearm",
+      "sequence": [
+        "up",
+        "up",
+        "left",
+        "up",
+        "right"
+      ],
+      "category": "common",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Eagle_Rearm",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "mg-43-machine-gun",
+      "name": "MG-43 Machine Gun",
+      "sequence": [
+        "down",
+        "left",
+        "down",
+        "up",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/MG-43_Machine_Gun",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "apw-1-anti-materiel-rifle",
+      "name": "APW-1 Anti-Materiel Rifle",
+      "sequence": [
+        "down",
+        "left",
+        "right",
+        "up",
+        "down"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/APW-1_Anti-Materiel_Rifle",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "m-105-stalwart",
+      "name": "M-105 Stalwart",
+      "sequence": [
+        "down",
+        "left",
+        "down",
+        "up",
+        "up",
+        "left"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/M-105_Stalwart",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eat-17-expendable-anti-tank",
+      "name": "EAT-17 Expendable Anti-Tank",
+      "sequence": [
+        "down",
+        "down",
+        "left",
+        "up",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/EAT-17_Expendable_Anti-Tank",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "gr-8-recoilless-rifle",
+      "name": "GR-8 Recoilless Rifle",
+      "sequence": [
+        "down",
+        "left",
+        "right",
+        "right",
+        "left"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/GR-8_Recoilless_Rifle",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "flam-40-flamethrower",
+      "name": "FLAM-40 Flamethrower",
+      "sequence": [
+        "down",
+        "left",
+        "up",
+        "down",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/FLAM-40_Flamethrower",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "ac-8-autocannon",
+      "name": "AC-8 Autocannon",
+      "sequence": [
+        "down",
+        "left",
+        "down",
+        "up",
+        "up",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/AC-8_Autocannon",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "mg-206-heavy-machine-gun",
+      "name": "MG-206 Heavy Machine Gun",
+      "sequence": [
+        "down",
+        "left",
+        "up",
+        "down",
+        "down"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/MG-206_Heavy_Machine_Gun",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "rl-77-airburst-rocket-launcher",
+      "name": "RL-77 Airburst Rocket Launcher",
+      "sequence": [
+        "down",
+        "up",
+        "up",
+        "left",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/RL-77_Airburst_Rocket_Launcher",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "mls-4x-commando",
+      "name": "MLS-4X Commando",
+      "sequence": [
+        "down",
+        "left",
+        "up",
+        "down",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/MLS-4X_Commando",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "rs-422-railgun",
+      "name": "RS-422 Railgun",
+      "sequence": [
+        "down",
+        "right",
+        "down",
+        "up",
+        "left",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/RS-422_Railgun",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "faf-14-spear",
+      "name": "FAF-14 Spear",
+      "sequence": [
+        "down",
+        "down",
+        "up",
+        "down",
+        "down"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/FAF-14_Spear",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "sta-x3-w-a-s-p-launcher",
+      "name": "StA-X3 W.A.S.P. Launcher",
+      "sequence": [
+        "down",
+        "down",
+        "up",
+        "down",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/StA-X3_W.A.S.P._Launcher",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-gatling-barrage",
+      "name": "Orbital Gatling Barrage",
+      "sequence": [
+        "right",
+        "down",
+        "left",
+        "up",
+        "up"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_Gatling_Barrage",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-airburst-strike",
+      "name": "Orbital Airburst Strike",
+      "sequence": [
+        "right",
+        "right",
+        "right"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_Airburst_Strike",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-120mm-he-barrage",
+      "name": "Orbital 120mm HE Barrage",
+      "sequence": [
+        "right",
+        "right",
+        "down",
+        "left",
+        "right",
+        "down"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_120mm_HE_Barrage",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-380mm-he-barrage",
+      "name": "Orbital 380mm HE Barrage",
+      "sequence": [
+        "right",
+        "down",
+        "up",
+        "up",
+        "left",
+        "down",
+        "down"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_380mm_HE_Barrage",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-walking-barrage",
+      "name": "Orbital Walking Barrage",
+      "sequence": [
+        "right",
+        "down",
+        "right",
+        "down",
+        "right",
+        "down"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_Walking_Barrage",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-laser",
+      "name": "Orbital Laser",
+      "sequence": [
+        "right",
+        "down",
+        "up",
+        "right",
+        "down"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_Laser",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-railcannon-strike",
+      "name": "Orbital Railcannon Strike",
+      "sequence": [
+        "right",
+        "up",
+        "down",
+        "down",
+        "right"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_Railcannon_Strike",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-napalm-barrage",
+      "name": "Orbital Napalm Barrage",
+      "sequence": [
+        "right",
+        "right",
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_Napalm_Barrage",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eagle-strafing-run",
+      "name": "Eagle Strafing Run",
+      "sequence": [
+        "up",
+        "right",
+        "right"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Eagle_Strafing_Run",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eagle-airstrike",
+      "name": "Eagle Airstrike",
+      "sequence": [
+        "up",
+        "right",
+        "down",
+        "right"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Eagle_Airstrike",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eagle-cluster-bomb",
+      "name": "Eagle Cluster Bomb",
+      "sequence": [
+        "up",
+        "right",
+        "down",
+        "down",
+        "right"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Eagle_Cluster_Bomb",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eagle-napalm-airstrike",
+      "name": "Eagle Napalm Airstrike",
+      "sequence": [
+        "up",
+        "right",
+        "down",
+        "up"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Eagle_Napalm_Airstrike",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "lift-850-jump-pack",
+      "name": "LIFT-850 Jump Pack",
+      "sequence": [
+        "down",
+        "up",
+        "up",
+        "down",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/LIFT-850_Jump_Pack",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eagle-smoke-strike",
+      "name": "Eagle Smoke Strike",
+      "sequence": [
+        "up",
+        "right",
+        "up",
+        "down"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Eagle_Smoke_Strike",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eagle-110mm-rocket-pods",
+      "name": "Eagle 110mm Rocket Pods",
+      "sequence": [
+        "up",
+        "right",
+        "up",
+        "left"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Eagle_110mm_Rocket_Pods",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eagle-500kg-bomb",
+      "name": "Eagle 500kg Bomb",
+      "sequence": [
+        "up",
+        "right",
+        "down",
+        "down",
+        "down"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Eagle_500kg_Bomb",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "m-102-fast-recon-vehicle",
+      "name": "M-102 Fast Recon Vehicle",
+      "sequence": [
+        "left",
+        "down",
+        "right",
+        "down",
+        "right",
+        "down",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/M-102_Fast_Recon_Vehicle",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-precision-strike",
+      "name": "Orbital Precision Strike",
+      "sequence": [
+        "right",
+        "right",
+        "up"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_Precision_Strike",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-gas-strike",
+      "name": "Orbital Gas Strike",
+      "sequence": [
+        "right",
+        "right",
+        "down",
+        "right"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_Gas_Strike",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-ems-strike",
+      "name": "Orbital EMS Strike",
+      "sequence": [
+        "right",
+        "right",
+        "left",
+        "down"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_EMS_Strike",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "orbital-smoke-strike",
+      "name": "Orbital Smoke Strike",
+      "sequence": [
+        "right",
+        "right",
+        "down",
+        "up"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Orbital_Smoke_Strike",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "e-mg-101-hmg-emplacement",
+      "name": "E/MG-101 HMG Emplacement",
+      "sequence": [
+        "down",
+        "up",
+        "left",
+        "right",
+        "right",
+        "left"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/E%2FMG-101_HMG_Emplacement",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "fx-12-shield-generator-relay",
+      "name": "FX-12 Shield Generator Relay",
+      "sequence": [
+        "down",
+        "down",
+        "left",
+        "right",
+        "left",
+        "right"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/FX-12_Shield_Generator_Relay",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "a-arc-3-tesla-tower",
+      "name": "A/ARC-3 Tesla Tower",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "up",
+        "left",
+        "right"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/A%2FARC-3_Tesla_Tower",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "e-gl-21-grenadier-battlement",
+      "name": "E/GL-21 Grenadier Battlement",
+      "sequence": [
+        "down",
+        "right",
+        "down",
+        "left",
+        "right"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/E%2FGL-21_Grenadier_Battlement",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "md-6-anti-personnel-minefield",
+      "name": "MD-6 Anti-Personnel Minefield",
+      "sequence": [
+        "down",
+        "left",
+        "up",
+        "right"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/MD-6_Anti-Personnel_Minefield",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "b-1-supply-pack",
+      "name": "B-1 Supply Pack",
+      "sequence": [
+        "down",
+        "left",
+        "down",
+        "up",
+        "up",
+        "down"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/B-1_Supply_Pack",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "gl-21-grenade-launcher",
+      "name": "GL-21 Grenade Launcher",
+      "sequence": [
+        "down",
+        "left",
+        "up",
+        "left",
+        "down"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/GL-21_Grenade_Launcher",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "las-98-laser-cannon",
+      "name": "LAS-98 Laser Cannon",
+      "sequence": [
+        "down",
+        "left",
+        "down",
+        "up",
+        "left"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/LAS-98_Laser_Cannon",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "md-i4-incendiary-mines",
+      "name": "MD-I4 Incendiary Mines",
+      "sequence": [
+        "down",
+        "left",
+        "left",
+        "down"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/MD-I4_Incendiary_Mines",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "sh-20-ballistic-shield-backpack",
+      "name": "SH-20 Ballistic Shield Backpack",
+      "sequence": [
+        "down",
+        "left",
+        "down",
+        "down",
+        "up",
+        "left"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/SH-20_Ballistic_Shield_Backpack",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "arc-3-arc-thrower",
+      "name": "ARC-3 Arc Thrower",
+      "sequence": [
+        "down",
+        "right",
+        "down",
+        "up",
+        "left",
+        "left"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/ARC-3_Arc_Thrower",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "md-17-anti-tank-mines",
+      "name": "MD-17 Anti-Tank Mines",
+      "sequence": [
+        "down",
+        "left",
+        "up",
+        "up"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/MD-17_Anti-Tank_Mines",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "las-99-quasar-cannon",
+      "name": "LAS-99 Quasar Cannon",
+      "sequence": [
+        "down",
+        "down",
+        "up",
+        "left",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/LAS-99_Quasar_Cannon",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "sh-32-shield-generator-pack",
+      "name": "SH-32 Shield Generator Pack",
+      "sequence": [
+        "down",
+        "up",
+        "left",
+        "right",
+        "left",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/SH-32_Shield_Generator_Pack",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "md-8-gas-mines",
+      "name": "MD-8 Gas Mines",
+      "sequence": [
+        "down",
+        "left",
+        "left",
+        "right"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/MD-8_Gas_Mines",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "ax-las-5-rover",
+      "name": "AX/LAS-5 Rover",
+      "sequence": [
+        "down",
+        "up",
+        "left",
+        "up",
+        "right",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/AX%2FLAS-5_Rover",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "a-mg-43-machine-gun-sentry",
+      "name": "A/MG-43 Machine Gun Sentry",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "right",
+        "up"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/A%2FMG-43_Machine_Gun_Sentry",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "a-g-16-gatling-sentry",
+      "name": "A/G-16 Gatling Sentry",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "left"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/A%2FG-16_Gatling_Sentry",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "a-m-12-mortar-sentry",
+      "name": "A/M-12 Mortar Sentry",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "right",
+        "down"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/A%2FM-12_Mortar_Sentry",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "a-ac-8-autocannon-sentry",
+      "name": "A/AC-8 Autocannon Sentry",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "up",
+        "left",
+        "up"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/A%2FAC-8_Autocannon_Sentry",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "a-m-23-ems-mortar-sentry",
+      "name": "A/M-23 EMS Mortar Sentry",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "down",
+        "right"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/A%2FM-23_EMS_Mortar_Sentry",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "a-mls-4x-rocket-sentry",
+      "name": "A/MLS-4X Rocket Sentry",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "right",
+        "left"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/A%2FMLS-4X_Rocket_Sentry",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "ax-ar-23-guard-dog",
+      "name": "AX/AR-23 Guard Dog",
+      "sequence": [
+        "down",
+        "up",
+        "left",
+        "up",
+        "right",
+        "down"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/AX%2FAR-23_Guard_Dog",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "exo-45-patriot-exosuit",
+      "name": "EXO-45 Patriot Exosuit",
+      "sequence": [
+        "left",
+        "down",
+        "right",
+        "up",
+        "left",
+        "down",
+        "down"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/EXO-45_Patriot_Exosuit",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "exo-49-emancipator-exosuit",
+      "name": "EXO-49 Emancipator Exosuit",
+      "sequence": [
+        "left",
+        "down",
+        "right",
+        "up",
+        "left",
+        "down",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/EXO-49_Emancipator_Exosuit",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "td-220-bastion-mk-xvi",
+      "name": "TD-220 Bastion MK XVI",
+      "sequence": [
+        "left",
+        "down",
+        "right",
+        "down",
+        "left",
+        "down",
+        "up",
+        "down",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/TD-220_Bastion_MK_XVI",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "m-103-supply-frv",
+      "name": "M-103 Supply FRV",
+      "sequence": [
+        "left",
+        "down",
+        "left",
+        "left",
+        "down",
+        "up",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/M-103_Supply_FRV",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eagle-gas-airstrike",
+      "name": "Eagle Gas Airstrike",
+      "sequence": [
+        "up",
+        "right",
+        "left",
+        "right"
+      ],
+      "category": "offensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Eagle_Gas_Airstrike",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "td-110-maelstrom",
+      "name": "TD-110 Maelstrom",
+      "sequence": [
+        "left",
+        "down",
+        "right",
+        "down",
+        "left",
+        "down",
+        "up",
+        "left",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/TD-110_Maelstrom",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

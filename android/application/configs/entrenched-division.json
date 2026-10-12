@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "entrenched-division",
+  "name": "Entrenched Division",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2026-03-17",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2026/03/10/helldivers-2-entrenched-division-premium-warbond-out-march-17/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Directional codes verified from the linked community sources.",
+  "stratagems": [
+    {
+      "id": "a-gm-17-gas-mortar-sentry",
+      "name": "A/GM-17 Gas Mortar Sentry",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "down",
+        "left"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/A%2FGM-17_Gas_Mortar_Sentry",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "b-flam-80-cremator",
+      "name": "B/FLAM-80 Cremator",
+      "sequence": [
+        "down",
+        "down",
+        "right",
+        "down",
+        "up",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/B%2FFLAM-80_Cremator",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

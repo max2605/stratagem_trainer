@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "servants-of-freedom",
+  "name": "Servants of Freedom",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2025-02-06",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/?p=400972",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Directional codes verified from the linked community sources.",
+  "stratagems": [
+    {
+      "id": "b-100-portable-hellbomb",
+      "name": "B-100 Portable Hellbomb",
+      "sequence": [
+        "down",
+        "right",
+        "up",
+        "up",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/B-100_Portable_Hellbomb",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

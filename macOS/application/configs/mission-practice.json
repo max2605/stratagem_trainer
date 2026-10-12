@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "id": "mission-practice",
+  "name": "Mission Practice",
+  "kind": "base",
+  "description": "Objective-specific codes. SSSD delivery and Portable Hellbomb variants have their own context and sequence.",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://helldivers.wiki.gg/wiki/Stratagems",
+    "https://helldivers.wiki.gg/wiki/SSSD_Delivery",
+    "https://helldivers.wiki.gg/wiki/B-100_Portable_Hellbomb"
+  ],
+  "stratagems": [
+    {
+      "id": "sssd-delivery",
+      "name": "SSSD Delivery",
+      "sequence": [
+        "down",
+        "down",
+        "down",
+        "up",
+        "up"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/SSSD_Delivery",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "prospecting-drill",
+      "name": "Prospecting Drill",
+      "sequence": [
+        "down",
+        "down",
+        "left",
+        "right",
+        "down",
+        "down"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Prospecting_Drill",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "super-earth-flag",
+      "name": "Super Earth Flag",
+      "sequence": [
+        "down",
+        "up",
+        "down",
+        "up"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Super_Earth_Flag",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "nux-223-hellbomb",
+      "name": "NUX-223 Hellbomb",
+      "sequence": [
+        "down",
+        "up",
+        "left",
+        "down",
+        "up",
+        "right",
+        "down",
+        "up"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/NUX-223_Hellbomb",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "upload-data",
+      "name": "Upload Data",
+      "sequence": [
+        "left",
+        "right",
+        "up",
+        "up",
+        "up"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Upload_Data",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "se-45-seismic-probe",
+      "name": "SE-45 Seismic Probe",
+      "sequence": [
+        "up",
+        "up",
+        "left",
+        "right",
+        "down",
+        "down"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/SE-45_Seismic_Probe",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "seaf-artillery",
+      "name": "SEAF Artillery",
+      "sequence": [
+        "right",
+        "up",
+        "up",
+        "down"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/SEAF_Artillery",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "tectonic-drill",
+      "name": "Tectonic Drill",
+      "sequence": [
+        "up",
+        "down",
+        "up",
+        "down",
+        "up",
+        "down"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Tectonic_Drill",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "hive-breaker-drill",
+      "name": "Hive Breaker Drill",
+      "sequence": [
+        "left",
+        "up",
+        "down",
+        "right",
+        "down",
+        "down"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Hive_Breaker_Drill",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "cargo-container",
+      "name": "Cargo Container",
+      "sequence": [
+        "up",
+        "up",
+        "down",
+        "down",
+        "right",
+        "down"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Cargo_Container",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "call-in-super-destroyer",
+      "name": "Call In Super Destroyer",
+      "sequence": [
+        "up",
+        "up",
+        "down",
+        "down",
+        "left",
+        "right",
+        "left",
+        "right"
+      ],
+      "category": "mission",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Call_In_Super_Destroyer",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ],
+      "tags": [
+        "mission"
+      ]
+    },
+    {
+      "id": "sssd-delivery-automaton",
+      "name": "SSSD Delivery (Automaton Objectives)",
+      "sequence": [
+        "down",
+        "down",
+        "down",
+        "down",
+        "down",
+        "up",
+        "up"
+      ],
+      "category": "mission",
+      "tags": [
+        "mission"
+      ],
+      "source": [
+        "https://helldivers.wiki.gg/wiki/SSSD_Delivery"
+      ]
+    },
+    {
+      "id": "portable-hellbomb-spore-lung",
+      "name": "B-100 Portable Hellbomb (Spore Lung Objective)",
+      "sequence": [
+        "down",
+        "right",
+        "up",
+        "up",
+        "down"
+      ],
+      "category": "mission",
+      "tags": [
+        "mission"
+      ],
+      "source": [
+        "https://helldivers.wiki.gg/wiki/B-100_Portable_Hellbomb"
+      ]
+    },
+    {
+      "id": "tactical-video-camera",
+      "name": "Tactical Video Camera",
+      "sequence": [
+        "right",
+        "down",
+        "down",
+        "up",
+        "left",
+        "left",
+        "up"
+      ],
+      "category": "mission",
+      "tags": [
+        "mission"
+      ],
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Tactical_Video_Camera"
+      ]
+    },
+    {
+      "id": "portable-comms-relay",
+      "name": "Portable Comms Relay",
+      "sequence": [
+        "up",
+        "up",
+        "down",
+        "down",
+        "left",
+        "left",
+        "down"
+      ],
+      "category": "mission",
+      "tags": [
+        "mission"
+      ],
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Stratagems"
+      ]
+    },
+    {
+      "id": "activate-e-711-extraction-drill",
+      "name": "Activate E-711 Extraction Drill",
+      "sequence": [
+        "down",
+        "down",
+        "left",
+        "left",
+        "down",
+        "down"
+      ],
+      "category": "mission",
+      "tags": [
+        "mission"
+      ],
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Stratagems"
+      ]
+    },
+    {
+      "id": "aquifer-drill",
+      "name": "Aquifer Drill",
+      "sequence": [
+        "left",
+        "left",
+        "left",
+        "up",
+        "down",
+        "right",
+        "down",
+        "down"
+      ],
+      "category": "mission",
+      "tags": [
+        "mission"
+      ],
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Stratagems"
+      ]
+    },
+    {
+      "id": "reinforcement-pods",
+      "name": "Reinforcement Pods",
+      "sequence": [
+        "left",
+        "right",
+        "up",
+        "up",
+        "up"
+      ],
+      "category": "mission",
+      "tags": [
+        "mission"
+      ],
+      "source": [
+        "https://helldivers.wiki.gg/wiki/Stratagems"
+      ]
+    }
+  ]
+}

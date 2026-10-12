@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "dust-devils",
+  "name": "Dust Devils",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2025-09-04",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2025/08/26/helldivers-2-into-the-unjust-launches-september-2/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Directional codes verified from the linked community sources.",
+  "stratagems": [
+    {
+      "id": "s-11-speargun",
+      "name": "S-11 Speargun",
+      "sequence": [
+        "down",
+        "right",
+        "down",
+        "left",
+        "up",
+        "right"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/S-11_Speargun",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eat-700-expendable-napalm",
+      "name": "EAT-700 Expendable Napalm",
+      "sequence": [
+        "down",
+        "down",
+        "left",
+        "up",
+        "left"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/EAT-700_Expendable_Napalm",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "ms-11-solo-silo",
+      "name": "MS-11 Solo Silo",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "down",
+        "down"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/MS-11_Solo_Silo",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

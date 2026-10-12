@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "siege-breakers",
+  "name": "Siege Breakers",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2026-02-03",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2026/01/27/helldivers-2-siege-breakers-premium-warbond-drops-february-3/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "TD-220 Bastion MK XVI was a free requisition unlock released separately, not a Warbond reward.",
+  "stratagems": [
+    {
+      "id": "cqc-20-breaching-hammer",
+      "name": "CQC-20 Breaching Hammer",
+      "sequence": [
+        "down",
+        "left",
+        "right",
+        "left",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/CQC-20_Breaching_Hammer",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "eat-411-leveller",
+      "name": "EAT-411 Leveller",
+      "sequence": [
+        "down",
+        "down",
+        "left",
+        "up",
+        "down"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/EAT-411_Leveller",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "gl-28-belt-fed-grenade-launcher",
+      "name": "GL-28 Belt-Fed Grenade Launcher",
+      "sequence": [
+        "down",
+        "left",
+        "up",
+        "left",
+        "up",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/GL-28_Belt-Fed_Grenade_Launcher",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

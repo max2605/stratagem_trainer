@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "masters-of-ceremony",
+  "name": "Masters of Ceremony",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2025-05-15",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/?p=404582",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Directional codes verified from the linked community sources.",
+  "stratagems": [
+    {
+      "id": "cqc-1-one-true-flag",
+      "name": "CQC-1 One True Flag",
+      "sequence": [
+        "down",
+        "left",
+        "right",
+        "right",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/CQC-1_One_True_Flag",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

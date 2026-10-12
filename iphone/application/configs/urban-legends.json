@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "urban-legends",
+  "name": "Urban Legends",
+  "kind": "warbond",
+  "description": "Stratagem call-in codes unlocked in this Warbond.",
+  "releaseDate": "2024-12-13",
+  "verifiedAt": "2026-10-12",
+  "source": [
+    "https://blog.playstation.com/2024/12/13/helldivers-2-urban-legends-warbond-drops-today/",
+    "https://helldivers.wiki.gg/wiki/Warbonds",
+    "https://helldivers.wiki.gg/wiki/Stratagems"
+  ],
+  "notes": "Directional codes verified from the linked community sources.",
+  "stratagems": [
+    {
+      "id": "sh-51-directional-shield",
+      "name": "SH-51 Directional Shield",
+      "sequence": [
+        "down",
+        "up",
+        "left",
+        "right",
+        "up",
+        "up"
+      ],
+      "category": "supply",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/SH-51_Directional_Shield",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "a-flam-40-flame-sentry",
+      "name": "A/FLAM-40 Flame Sentry",
+      "sequence": [
+        "down",
+        "up",
+        "right",
+        "down",
+        "up",
+        "up"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/A%2FFLAM-40_Flame_Sentry",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    },
+    {
+      "id": "e-at-12-anti-tank-emplacement",
+      "name": "E/AT-12 Anti-Tank Emplacement",
+      "sequence": [
+        "down",
+        "up",
+        "left",
+        "right",
+        "right",
+        "right"
+      ],
+      "category": "defensive",
+      "source": [
+        "https://helldivers.wiki.gg/wiki/E%2FAT-12_Anti-Tank_Emplacement",
+        "https://raw.githubusercontent.com/k33bs/Helldivers-2-Stratagem-JSON-Generator/eda04ed2f6a7a97f7253c21454f2926cf7c26c3f/sequences.json"
+      ]
+    }
+  ]
+}

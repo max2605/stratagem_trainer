@@ -1,0 +1,33 @@
+Stratagem Trainer catalog data
+
+The directional codes are adapted from the community-maintained Helldivers 2
+Stratagem JSON Generator by Keebs, pinned to commit
+eda04ed2f6a7a97f7253c21454f2926cf7c26c3f:
+https://github.com/k33bs/Helldivers-2-Stratagem-JSON-Generator
+
+Additional factual sources, verification scope, and corrections are recorded
+in docs/catalog.md in the source distribution. Individual packs include their
+source links. This is a community trainer and is not affiliated with Sony,
+PlayStation, or Arrowhead Game Studios.
+
+MIT License
+
+Copyright (c) 2025 Keebs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
