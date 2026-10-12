@@ -8,7 +8,8 @@ Der Trainer verwendet eine gemeinsame TypeScript-Anwendung. Electron verpackt si
 | Linux x64 | `*-linux-x64.AppImage`, `*-linux-x64.tar.gz` | AppImage ausführbar machen; alternativ Archiv entpacken und `stratagem-trainer` starten |
 | macOS Intel / Apple Silicon | `*-mac-x64.dmg`, `*-mac-arm64.dmg`, passende ZIPs | DMG öffnen und App nach „Programme“ ziehen |
 | Android | `*-android-debug.apk` | Test-APK auf dem Gerät installieren; Installation aus dieser Downloadquelle erlauben |
-| iPhone / iPad | `*-iphone-simulator.zip`, `*-iphone-unsigned.ipa`, `*-iphone-unsigned-xcarchive.zip` | Simulator-App für Xcode; Gerätearchiv muss vor einer Geräteinstallation signiert werden |
+| iPhone / iPad | [Offline-Web-App](https://max2605.github.io/stratagem_trainer/) | Safari → Teilen → Zum Home-Bildschirm; vom Nutzer gewählte iPhone-Auslieferung ohne Apple-Entwicklerzugang |
+| iOS-Entwicklung (optional) | `*-iphone-simulator.zip`, `*-iphone-unsigned.ipa`, `*-iphone-unsigned-xcarchive.zip` | Simulator-App für Xcode; Gerätearchiv muss vor einer Geräteinstallation signiert werden |
 | Alle Plattformen | `*-complete.zip` | Anwendung, JSON-Konfigurationen, Sprachdateien, Quellcode und Codex-Hinweise in einem Archiv |
 
 Desktop-Builds sind zunächst unsigniert. Windows und macOS können daher eine Betriebssystembestätigung verlangen. Die macOS-Ausnahme erfolgt in Systemeinstellungen → Datenschutz & Sicherheit. Es werden keine Systemschutzfunktionen automatisch abgeschaltet.
@@ -38,7 +39,7 @@ Die maßgeblichen JSON-Dateien liegen in `shared/application/configs` und `share
 
 ## Lokal bauen
 
-Node.js 22 oder neuer und pnpm 11.25.0 sind erforderlich. Die genaue Abhängigkeitsauflösung steht in `pnpm-lock.yaml`.
+Node.js 22 oder neuer und pnpm 11.25.0 sind erforderlich. Die genaue Abhängigkeitsauflösung steht in `pnpm-lock.yaml`. In vollständigen Plattform-ZIPs bleibt `sourcecode/README.md` der Plattformhinweis; `sourcecode/BUILD-README.md` enthält die gemeinsame Projektanleitung.
 
 ```sh
 pnpm install --frozen-lockfile

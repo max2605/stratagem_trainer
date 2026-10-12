@@ -9,7 +9,7 @@ createRoot(document.getElementById("root")!).render(
 );
 if (
   "serviceWorker" in navigator &&
-  (location.protocol === "https:" || location.hostname === "localhost") &&
+  (location.protocol === "https:" || ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname)) &&
   !import.meta.env.DEV
 )
   navigator.serviceWorker.register("./sw.js").catch(() => {});

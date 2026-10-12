@@ -36,7 +36,10 @@ for (const platform of selected) {
   await cp(await findAssets('configs'), path.join(application, 'configs'), { recursive: true, force: true });
   await cp(await findAssets('lang'), path.join(application, 'lang'), { recursive: true, force: true });
   await copyIfExists(path.join(root, 'dist'), path.join(application, 'web'));
-  for (const source of sources) await copyIfExists(path.join(root, source), path.join(destination, 'sourcecode', source));
+  for (const source of sources) {
+    const relativeDestination = source === 'README.md' ? 'BUILD-README.md' : source;
+    await copyIfExists(path.join(root, source), path.join(destination, 'sourcecode', relativeDestination));
+  }
   await copyIfExists(path.join(root, 'codex'), path.join(destination, 'codex'));
   await writeFile(path.join(destination, 'codex', 'PLATFORM.md'), `# ${platform}\n\nGenerated with \`node scripts/stage-platforms.mjs --platform ${platform}\`.\nThe root source is canonical. Rebuild it before staging. Native mobile projects live in this platform's sourcecode/native directory.\nDo not put credentials, signing certificates or personal data here.\n`);
 
